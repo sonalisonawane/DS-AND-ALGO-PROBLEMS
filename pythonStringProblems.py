@@ -71,3 +71,36 @@
 #         return ch+ans
 
 # remove_duplicates("ssoonali")
+
+
+# move all x to end of the string
+
+# def x_to_end(str):
+#     if len(str) == 0:
+#         return ""
+#     ch = str[0]
+#     ans = x_to_end(str[1:])
+#     if ch == "x":
+#         return ans+ch
+#     return ch+ans
+
+
+# print(x_to_end("sxoxnxaxlxi"))
+
+
+# generate all substring of a string
+
+def substr(str,ans):
+    if len(str)==0:
+        print(ans)
+        return
+
+    ch = str[0]
+    res = str[1:]
+    substr(res,ans);
+    substr(res,ans+ch)
+
+print(substr("sonali",""))
+
+
+
