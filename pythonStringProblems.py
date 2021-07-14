@@ -90,17 +90,42 @@
 
 # generate all substring of a string
 
-def substr(str,ans):
-    if len(str)==0:
-        print(ans)
-        return
+# def substr(str,ans):
+#     if len(str)==0:
+#         print(ans)
+#         return
 
-    ch = str[0]
-    res = str[1:]
-    substr(res,ans);
-    substr(res,ans+ch)
+#     ch = str[0]
+#     res = str[1:]
+#     substr(res,ans);
+#     substr(res,ans+ch)
 
-print(substr("sonali",""))
+# print(substr("sonali",""))
+
+# num= 123456789
+# numlist = []
+# while num>0:
+#     mod = num % 10
+#     numlist.append(mod)
+#     num = num // 10
+# print(numlist[::-1]) #start:last:step
 
 
 
+# newList= [[1,2,3],[3,2,1],[9,8,7],[7,8,9]]
+
+# for x in range(len(newList)):
+#     for y in range(len(newList[x])):
+#         print(newList[x][y],end=" ")
+
+
+
+
+
+
+
+
+# newString = "sonali"
+
+
+    
