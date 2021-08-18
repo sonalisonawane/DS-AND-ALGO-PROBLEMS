@@ -9,6 +9,15 @@
 
 # print(sorted(arr))
 
+n = int(input("enter the number"))
+newList = []
+for i in range(n):
+    inputs = int(input("Enter N number of input"))
+    newList.append(inputs)
 
+for j in range(len(newList)):
+     total = sum(newList)
+     average = total/n
+print(average)
 
-
+ 

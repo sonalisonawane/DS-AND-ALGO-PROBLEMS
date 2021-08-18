@@ -45,3 +45,17 @@
 # sumOfSubarray(arr) # subarrays are :[1][1,2][1,2,0],[1,2,0,7][1,2,0,7,2],[2],[2,0],[2,0,7],[2,0,7,2],[0],[0,7],[0,7,2],[7],[7,2],[2]
 
 
+# record breaker problem:
+#in this problem we have to check the ith day which is greater than its previous values as well AS its following value
+
+def record_break_day(arr):
+    maximum = -1
+    ans = 0
+    for i in range(len(arr)):
+        if arr[i] > maximum and arr[i]>arr[i+1]:
+            print("{} Day is the record breaking day.".format(arr[i]))
+            ans+=1
+            maximum = max(maximum,arr[i])
+    return ans
+arr = [1,2,0,7,2]
+print(record_break_day(arr))
